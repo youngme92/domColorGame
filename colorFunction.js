@@ -44,7 +44,7 @@ function squareClick(){
                 squares[i].style.backgroundColor = pickColor;
             }
         }else{
-            messageDisplay.innerHTML = "TRY AGAIN!";
+            messageDisplay.innerHTML = "AGAIN!";
         this.style.backgroundColor = "#222222";
         }       
 }
