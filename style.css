@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-
+    margin: 20px auto;
 }
 
 #navDisplay {
@@ -13,13 +13,26 @@ body {
     margin: 0;
     text-align: center;
     color: white;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1.1;
+    font-weight: normal;
+    padding: 20px 0;
 }
 
 #colorDisplay {
     display: block;
-}
-h1 {
-    margin: 0;
+    text-transform: uppercase;
+    font-size: 200%;
+    opacity: 1;
+    animation: fade infinite 5s;
+    -webkit-animation: fade infinite 5s;
+    -moz-animation: fade infinite 5s;
 }
 
 .stripe {
@@ -38,6 +51,14 @@ h1 {
     font-size: inherit;
     outline: none;
     /* margin: 0; */
+    transition:all 0.6s;
+    -webkit-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+}
+
+.btn:hover {
+    background-color: steelblue;
+    color: white;
 }
 
 #messageDisplay {
@@ -55,10 +76,28 @@ h1 {
     padding-bottom: 30%;
     /* background-color: blue; */
     /* border: 1rem solid red; */
-    margin: 1%;
+    margin: 1.66%;
     float: left;
+    border-radius: 15%;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
 }
 
 .hide {
     display: none;
 }
+
+.selected {
+    background-color: steelblue;
+    color: white;
+}
+
+@keyframes fade{
+    20%{
+      opacity: 0.4;
+    }
+    80%{
+      opacity: 1;
+    }
+  }
